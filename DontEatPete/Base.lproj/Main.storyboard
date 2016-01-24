@@ -1,13 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Instructions OneVC-->
+        <scene sceneID="RZS-QP-46w">
+            <objects>
+                <viewController id="hgW-f0-sby" customClass="InstructionsOneVC" customModule="DontEatPete" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qpx-6T-zMb"/>
+                        <viewControllerLayoutGuide type="bottom" id="L0l-ms-q2e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f0s-8J-vHE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2h-a6-CWM">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Eat Pete Rules!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg5-Vw-d2g">
+                                        <rect key="frame" x="193" y="80" width="173" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="8hG-Ju-ZW4"/>
+                                            <constraint firstAttribute="width" constant="173" id="qTg-fk-lyy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="0.0039215686269999999" green="0.76078431369999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Go-ra-ezi">
+                                        <rect key="frame" x="138" y="124" width="283" height="351.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="351.5" id="AtO-SG-A12"/>
+                                            <constraint firstAttribute="width" constant="283" id="eLl-ks-BGa"/>
+                                        </constraints>
+                                        <string key="text">Don't eat pete was one of my favorite games to play with my family when I was growing up. It is a very simple game where you place candies or treats on a grid and while one player looks away, the rest decide on a specific grid location that is "Pete".   Then the player comes back and proceeds to pick treats, trying not to pick Pete. The player continues to gather treats until they come to Pete, when the rest yell "Don't Eat Pete!"  So grab a bowl of candy, pick a Pete, and each time you select a non-Pete square, grab a treat!</string>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="A6C-fd-PM5">
+                                        <rect key="frame" x="245" y="555" width="70" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="2gw-2v-ElL"/>
+                                            <constraint firstAttribute="width" constant="70" id="JEv-Zk-SA0"/>
+                                        </constraints>
+                                        <color key="pageIndicatorTintColor" red="0.0039215686269999999" green="0.76078431369999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.98431372549999996" green="0.2470588235" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-9t-IDY">
+                                        <rect key="frame" x="540" y="30" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="FP6-Mw-pyg"/>
+                                            <constraint firstAttribute="height" constant="20" id="fun-If-BZ3"/>
+                                            <constraint firstAttribute="height" constant="20" id="kkQ-uM-Ugs"/>
+                                            <constraint firstAttribute="width" constant="20" id="wZM-oE-IST"/>
+                                        </constraints>
+                                        <state key="normal" image="exit.png"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="FP6-Mw-pyg"/>
+                                                <exclude reference="kkQ-uM-Ugs"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="instructionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QX0-49-spf"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="toMainView" id="WIY-Vp-UAB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7Go-ra-ezi" firstAttribute="centerX" secondItem="P2h-a6-CWM" secondAttribute="centerX" id="2BC-tp-3G6"/>
+                                    <constraint firstAttribute="trailing" secondItem="wOU-9t-IDY" secondAttribute="trailing" id="Oe3-gn-ZYJ"/>
+                                    <constraint firstItem="7Go-ra-ezi" firstAttribute="top" secondItem="fg5-Vw-d2g" secondAttribute="bottom" constant="20" id="PZf-eL-uTv"/>
+                                    <constraint firstAttribute="bottom" secondItem="A6C-fd-PM5" secondAttribute="bottom" constant="8" id="TXA-jZ-b4r"/>
+                                    <constraint firstItem="wOU-9t-IDY" firstAttribute="top" secondItem="P2h-a6-CWM" secondAttribute="top" constant="30" id="YjZ-ld-1uy"/>
+                                    <constraint firstItem="A6C-fd-PM5" firstAttribute="centerX" secondItem="P2h-a6-CWM" secondAttribute="centerX" id="ehd-Yu-tf7"/>
+                                    <constraint firstItem="fg5-Vw-d2g" firstAttribute="centerX" secondItem="P2h-a6-CWM" secondAttribute="centerX" id="f6t-Tf-siT"/>
+                                    <constraint firstItem="7Go-ra-ezi" firstAttribute="centerY" secondItem="P2h-a6-CWM" secondAttribute="centerY" id="hha-V4-18q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P2h-a6-CWM" firstAttribute="leading" secondItem="f0s-8J-vHE" secondAttribute="leadingMargin" id="8Ww-rs-Uju"/>
+                            <constraint firstItem="P2h-a6-CWM" firstAttribute="top" secondItem="f0s-8J-vHE" secondAttribute="topMargin" id="XEk-P0-f6s"/>
+                            <constraint firstItem="L0l-ms-q2e" firstAttribute="top" secondItem="P2h-a6-CWM" secondAttribute="bottom" id="Z7h-Kg-keo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P2h-a6-CWM" secondAttribute="trailing" id="jqP-l8-tBh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="A6C-fd-PM5" id="sqX-GR-vID"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ckq-V1-Sq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="-483"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DontEatPete" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +112,616 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LeO-bB-gCP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Eat Pete!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha4-SB-xgL">
+                                        <rect key="frame" x="220" y="21" width="160" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="W8l-py-yvX"/>
+                                            <constraint firstAttribute="width" constant="160" id="tG2-Gv-0f5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R9-5o-e6O">
+                                        <rect key="frame" x="570" y="26" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="Fuz-j9-Ehj"/>
+                                            <constraint firstAttribute="height" constant="22" id="kcb-nM-7Gm"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="infoBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="30H-VU-M0d"/>
+                                            <segue destination="hgW-f0-sby" kind="show" identifier="toInstructionsView" id="nHd-Pc-waC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.76078431369999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6R9-5o-e6O" secondAttribute="trailing" constant="8" id="52u-Jf-7jm"/>
+                                    <constraint firstAttribute="bottom" secondItem="ha4-SB-xgL" secondAttribute="bottom" constant="8" id="IN5-27-3Im"/>
+                                    <constraint firstAttribute="height" constant="60" id="jKM-j2-mUo"/>
+                                    <constraint firstItem="ha4-SB-xgL" firstAttribute="centerX" secondItem="LeO-bB-gCP" secondAttribute="centerX" id="lz1-oh-GPT"/>
+                                    <constraint firstAttribute="bottom" secondItem="6R9-5o-e6O" secondAttribute="bottom" constant="12" id="mk5-JU-UBJ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GGr-Jv-gMA">
+                                <rect key="frame" x="20" y="80" width="560" height="500"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dzk-Cw-DJo">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jkb-Ki-GkH" userLabel="Btn 1" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sB4-AX-nhH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73D-7O-aVB" userLabel="Btn 2" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSd-fG-5Vb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMp-jm-swu" userLabel="Btn 3" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3g-ss-eKW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uWh-8p-JG2">
+                                        <rect key="frame" x="0.0" y="101" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPA-cu-F4j" userLabel="Btn 4" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K3x-er-yaw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58d-1d-R3f" userLabel="Btn 5" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LTU-5P-bgl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kya-Xn-xSV" userLabel="Btn 6" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4i-X2-U7I"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bwC-I6-Zq4">
+                                        <rect key="frame" x="0.0" y="202" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-W4-aB9" userLabel="Btn 7" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lIo-7c-tpB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQz-gf-5Zi" userLabel="Btn 8" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vad-5y-aRN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cni-mN-bds" userLabel="Btn 9" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQh-Pr-pak"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oeh-rJ-Fjs">
+                                        <rect key="frame" x="0.0" y="303" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-SE-pDU" userLabel="Btn 10" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejr-Ub-Qhe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEi-jv-ajA" userLabel="Btn 11" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6Z-aX-6hR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luy-IM-0uk" userLabel="Btn 12" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vre-Zq-zCu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dGC-zc-IwE">
+                                        <rect key="frame" x="0.0" y="404" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WB-w8-IQm" userLabel="Btn 13" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zH4-AG-XGQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrH-n6-BOL" userLabel="Btn 14" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLJ-vr-2hF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx8-EZ-CUo" userLabel="Btn 15" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="peteBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caQ-CW-Fur"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bwC-I6-Zq4" firstAttribute="width" secondItem="dzk-Cw-DJo" secondAttribute="width" id="514-XU-E1u"/>
+                                    <constraint firstItem="uWh-8p-JG2" firstAttribute="width" secondItem="dzk-Cw-DJo" secondAttribute="width" id="NG0-9j-s8d"/>
+                                    <constraint firstItem="uWh-8p-JG2" firstAttribute="height" secondItem="dzk-Cw-DJo" secondAttribute="height" id="QFk-B3-VEP"/>
+                                    <constraint firstItem="dGC-zc-IwE" firstAttribute="height" secondItem="dzk-Cw-DJo" secondAttribute="height" id="RVF-RP-pah"/>
+                                    <constraint firstItem="Oeh-rJ-Fjs" firstAttribute="width" secondItem="dzk-Cw-DJo" secondAttribute="width" id="Z7D-7G-8eW"/>
+                                    <constraint firstItem="dGC-zc-IwE" firstAttribute="width" secondItem="dzk-Cw-DJo" secondAttribute="width" id="aDs-BC-Eio"/>
+                                    <constraint firstItem="Oeh-rJ-Fjs" firstAttribute="height" secondItem="dzk-Cw-DJo" secondAttribute="height" id="bja-Ly-PCg"/>
+                                    <constraint firstItem="bwC-I6-Zq4" firstAttribute="height" secondItem="dzk-Cw-DJo" secondAttribute="height" id="ngD-As-lM0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GGr-Jv-gMA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="A0K-W1-OOE"/>
+                            <constraint firstItem="GGr-Jv-gMA" firstAttribute="top" secondItem="LeO-bB-gCP" secondAttribute="bottom" constant="20" id="GsJ-5i-c1R"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GGr-Jv-gMA" secondAttribute="bottom" constant="65" id="LMi-iT-kmx"/>
+                            <constraint firstItem="LeO-bB-gCP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pwf-NU-th6"/>
+                            <constraint firstItem="GGr-Jv-gMA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="SjY-0T-Urv"/>
+                            <constraint firstItem="GGr-Jv-gMA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Wcr-n0-6Os"/>
+                            <constraint firstItem="LeO-bB-gCP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gw6-pT-AdC"/>
+                            <constraint firstAttribute="trailing" secondItem="LeO-bB-gCP" secondAttribute="trailing" id="h56-PW-6TJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GGr-Jv-gMA" secondAttribute="bottom" constant="20" id="hpn-jO-lKu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GGr-Jv-gMA" secondAttribute="trailing" id="mxN-pd-NOC"/>
+                            <constraint firstItem="GGr-Jv-gMA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nlv-Eo-25P"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="A0K-W1-OOE"/>
+                                <exclude reference="SjY-0T-Urv"/>
+                                <exclude reference="Wcr-n0-6Os"/>
+                                <exclude reference="LMi-iT-kmx"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="btn1" destination="Jkb-Ki-GkH" id="tUZ-GZ-vro"/>
+                        <outlet property="btn10" destination="3vZ-SE-pDU" id="dYV-1S-Z1b"/>
+                        <outlet property="btn11" destination="OEi-jv-ajA" id="EvF-6S-y7D"/>
+                        <outlet property="btn12" destination="Luy-IM-0uk" id="4uY-vg-8qi"/>
+                        <outlet property="btn13" destination="3WB-w8-IQm" id="sOF-P9-jg4"/>
+                        <outlet property="btn14" destination="LrH-n6-BOL" id="fr6-if-JWK"/>
+                        <outlet property="btn15" destination="Cx8-EZ-CUo" id="y0E-lc-2tN"/>
+                        <outlet property="btn2" destination="73D-7O-aVB" id="bQr-uB-PkB"/>
+                        <outlet property="btn3" destination="RMp-jm-swu" id="zQK-Xl-nKE"/>
+                        <outlet property="btn4" destination="FPA-cu-F4j" id="ZeB-Qm-oHg"/>
+                        <outlet property="btn5" destination="58d-1d-R3f" id="udd-7h-RIv"/>
+                        <outlet property="btn6" destination="Kya-Xn-xSV" id="TwN-BP-5rs"/>
+                        <outlet property="btn7" destination="cbB-W4-aB9" id="K91-u4-KVc"/>
+                        <outlet property="btn8" destination="MQz-gf-5Zi" id="cVZ-lN-kbO"/>
+                        <outlet property="btn9" destination="Cni-mN-bds" id="Onj-bK-xde"/>
+                        <segue destination="zxe-Md-yzb" kind="show" identifier="game" animates="NO" id="1XT-mJ-ft2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="322" y="402"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="9Tx-MH-f6P">
+            <objects>
+                <viewController id="zxe-Md-yzb" customClass="GameViewController" customModule="DontEatPete" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MSG-gq-TXv"/>
+                        <viewControllerLayoutGuide type="bottom" id="zev-KH-3b4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2su-fy-BoC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2R-Pa-bd5" userLabel="Top Bar">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Eat Pete!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bC-kb-O3C">
+                                        <rect key="frame" x="220" y="21" width="160" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="2xT-cc-uV8"/>
+                                            <constraint firstAttribute="width" constant="160" id="u2m-bu-uOI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.76078431369999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0bC-kb-O3C" firstAttribute="centerX" secondItem="L2R-Pa-bd5" secondAttribute="centerX" id="Nt6-Y3-9fU"/>
+                                    <constraint firstAttribute="bottom" secondItem="0bC-kb-O3C" secondAttribute="bottom" constant="8" id="caX-lU-Iwy"/>
+                                    <constraint firstAttribute="height" constant="60" id="kUp-gG-SIf"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-QM-CSp">
+                                <rect key="frame" x="20" y="80" width="560" height="500"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="a4x-uW-mn8">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-es-HJS" userLabel="Btn 1" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="9Xh-8d-kya"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUU-wM-DeM" userLabel="Btn 2" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="1kr-na-3QO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDu-R0-gXd" userLabel="Btn 3" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="EYP-ic-CY0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IcU-7E-hPW">
+                                        <rect key="frame" x="0.0" y="101" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWk-lY-LnV" userLabel="Btn 4" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="bjH-qP-Oob"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgT-lD-7FU" userLabel="Btn 5" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="Biu-LA-GAD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3F-xh-97Z" userLabel="Btn 6" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="tfy-5B-7IY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WkR-9P-23K">
+                                        <rect key="frame" x="0.0" y="202" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akq-zu-VN2" userLabel="Btn 7" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="Q2U-XK-JQy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeR-hH-fOS" userLabel="Btn 8" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="qby-81-3Lx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7O-fQ-rw9" userLabel="Btn 9" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="gUp-75-Icj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="avP-pV-SNR">
+                                        <rect key="frame" x="0.0" y="303" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHh-e6-PIy" userLabel="Btn 10" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="YJo-cG-4iK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8E-6d-V9Y" userLabel="Btn 11" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="fzV-1m-zb4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBS-j8-5cc" userLabel="Btn 12" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="Svo-fd-dqL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tjm-EM-Umi">
+                                        <rect key="frame" x="0.0" y="404" width="560" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P87-2Z-W7H" userLabel="Btn 13" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="Mgz-sP-uTd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arO-5O-0FB" userLabel="Btn 14" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="189" y="0.0" width="183" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="j7Z-kZ-4Jc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cy-bT-90G" userLabel="Btn 15" customClass="PeteBtn" customModule="DontEatPete" customModuleProvider="target">
+                                                <rect key="frame" x="377" y="0.0" width="184" height="96"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eatPete:" destination="zxe-Md-yzb" eventType="touchUpInside" id="wrB-Wp-y8U"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IcU-7E-hPW" firstAttribute="width" secondItem="a4x-uW-mn8" secondAttribute="width" id="HJq-WZ-ckU"/>
+                                    <constraint firstItem="avP-pV-SNR" firstAttribute="width" secondItem="a4x-uW-mn8" secondAttribute="width" id="KKn-Cl-DDw"/>
+                                    <constraint firstItem="tjm-EM-Umi" firstAttribute="width" secondItem="a4x-uW-mn8" secondAttribute="width" id="LM8-w8-lrF"/>
+                                    <constraint firstItem="WkR-9P-23K" firstAttribute="width" secondItem="a4x-uW-mn8" secondAttribute="width" id="WQe-TN-TrJ"/>
+                                    <constraint firstItem="avP-pV-SNR" firstAttribute="height" secondItem="a4x-uW-mn8" secondAttribute="height" id="gBv-aq-lMe"/>
+                                    <constraint firstItem="IcU-7E-hPW" firstAttribute="height" secondItem="a4x-uW-mn8" secondAttribute="height" id="vEB-h5-iie"/>
+                                    <constraint firstItem="WkR-9P-23K" firstAttribute="height" secondItem="a4x-uW-mn8" secondAttribute="height" id="vJX-uK-5BT"/>
+                                    <constraint firstItem="tjm-EM-Umi" firstAttribute="height" secondItem="a4x-uW-mn8" secondAttribute="height" id="zfl-EP-xhW"/>
+                                </constraints>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iza-wA-tHi">
+                                <rect key="frame" x="180" y="203" width="240" height="193"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOg-gf-SLc">
+                                        <rect key="frame" x="70" y="100" width="99" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="BX8-Q6-14Z"/>
+                                            <constraint firstAttribute="height" constant="30" id="mNc-bW-Fsl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Play Again!">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="3av-N1-nAd"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You ate Pete!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXG-2u-NR5">
+                                        <rect key="frame" x="53" y="58" width="134" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="sFB-de-VBo"/>
+                                            <constraint firstAttribute="width" constant="134" id="vaF-t4-l2K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.76078431369999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eXG-2u-NR5" firstAttribute="centerX" secondItem="Iza-wA-tHi" secondAttribute="centerX" id="3En-0k-b5H"/>
+                                    <constraint firstItem="eXG-2u-NR5" firstAttribute="top" secondItem="Iza-wA-tHi" secondAttribute="top" constant="58" id="7oa-ab-WSN"/>
+                                    <constraint firstItem="jOg-gf-SLc" firstAttribute="centerX" secondItem="Iza-wA-tHi" secondAttribute="centerX" id="Gpl-lX-ZLs"/>
+                                    <constraint firstAttribute="height" constant="193" id="MEI-b7-knI"/>
+                                    <constraint firstItem="jOg-gf-SLc" firstAttribute="top" secondItem="eXG-2u-NR5" secondAttribute="bottom" constant="13" id="VHi-yu-PMC"/>
+                                    <constraint firstAttribute="width" constant="240" id="yoC-UL-gmT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iza-wA-tHi" firstAttribute="centerY" secondItem="2su-fy-BoC" secondAttribute="centerY" id="4Vx-ny-7kI"/>
+                            <constraint firstItem="zev-KH-3b4" firstAttribute="top" secondItem="sdR-QM-CSp" secondAttribute="bottom" constant="20" id="9Em-aJ-3Oe"/>
+                            <constraint firstItem="sdR-QM-CSp" firstAttribute="top" secondItem="MSG-gq-TXv" secondAttribute="bottom" constant="65" id="9FF-6o-hna"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sdR-QM-CSp" secondAttribute="trailing" id="BHb-i1-agm"/>
+                            <constraint firstItem="sdR-QM-CSp" firstAttribute="leading" secondItem="2su-fy-BoC" secondAttribute="leadingMargin" id="KYS-Z2-3eE"/>
+                            <constraint firstItem="sdR-QM-CSp" firstAttribute="top" secondItem="MSG-gq-TXv" secondAttribute="bottom" id="NCc-Qb-zH5"/>
+                            <constraint firstItem="Iza-wA-tHi" firstAttribute="centerX" secondItem="2su-fy-BoC" secondAttribute="centerX" id="Tzu-Gm-O6s"/>
+                            <constraint firstItem="sdR-QM-CSp" firstAttribute="top" secondItem="MSG-gq-TXv" secondAttribute="bottom" id="U2p-b3-0p3"/>
+                            <constraint firstItem="zev-KH-3b4" firstAttribute="top" secondItem="sdR-QM-CSp" secondAttribute="bottom" constant="65" id="UDm-4F-YIt"/>
+                            <constraint firstItem="L2R-Pa-bd5" firstAttribute="top" secondItem="2su-fy-BoC" secondAttribute="top" id="eMO-JA-bhy"/>
+                            <constraint firstAttribute="trailing" secondItem="L2R-Pa-bd5" secondAttribute="trailing" id="ego-wZ-bTX"/>
+                            <constraint firstItem="L2R-Pa-bd5" firstAttribute="leading" secondItem="2su-fy-BoC" secondAttribute="leading" id="gii-F5-im7"/>
+                            <constraint firstItem="sdR-QM-CSp" firstAttribute="top" secondItem="L2R-Pa-bd5" secondAttribute="bottom" constant="20" id="oH1-fU-pDn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9FF-6o-hna"/>
+                                <exclude reference="NCc-Qb-zH5"/>
+                                <exclude reference="U2p-b3-0p3"/>
+                                <exclude reference="UDm-4F-YIt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="gameOverLbl" destination="eXG-2u-NR5" id="Zmg-7c-3tZ"/>
+                        <outlet property="modalGameOver" destination="Iza-wA-tHi" id="yCl-r7-jjK"/>
+                        <outlet property="playAgainBtn" destination="jOg-gf-SLc" id="P5c-ot-fDK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKC-z3-FrL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="395"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="exit.png" width="300" height="300"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WIY-Vp-UAB"/>
+    </inferredMetricsTieBreakers>
 </document>

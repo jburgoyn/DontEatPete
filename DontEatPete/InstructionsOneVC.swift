@@ -10,8 +10,11 @@ import UIKit
 
 class InstructionsOneVC: UIViewController {
 
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
