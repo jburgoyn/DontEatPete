@@ -15,6 +15,11 @@ class PeteBtn: UIButton {
         
         layer.cornerRadius = 10.0
         
+        self.setImage(UIImage(named: "candy1"), forState: .Normal)
+        
+        self.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        self.tintColor = UIColor .whiteColor()
+        
     }
     
 }

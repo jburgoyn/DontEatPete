@@ -18,84 +18,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2h-a6-CWM">
-                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Eat Pete Rules!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg5-Vw-d2g">
-                                        <rect key="frame" x="193" y="80" width="173" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="8hG-Ju-ZW4"/>
-                                            <constraint firstAttribute="width" constant="173" id="qTg-fk-lyy"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                        <color key="textColor" red="0.0039215686269999999" green="0.76078431369999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Go-ra-ezi">
-                                        <rect key="frame" x="138" y="124" width="283" height="351.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="351.5" id="AtO-SG-A12"/>
-                                            <constraint firstAttribute="width" constant="283" id="eLl-ks-BGa"/>
-                                        </constraints>
-                                        <string key="text">Don't eat pete was one of my favorite games to play with my family when I was growing up. It is a very simple game where you place candies or treats on a grid and while one player looks away, the rest decide on a specific grid location that is "Pete".   Then the player comes back and proceeds to pick treats, trying not to pick Pete. The player continues to gather treats until they come to Pete, when the rest yell "Don't Eat Pete!"  So grab a bowl of candy, pick a Pete, and each time you select a non-Pete square, grab a treat!</string>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="A6C-fd-PM5">
-                                        <rect key="frame" x="245" y="555" width="70" height="37"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="37" id="2gw-2v-ElL"/>
-                                            <constraint firstAttribute="width" constant="70" id="JEv-Zk-SA0"/>
-                                        </constraints>
-                                        <color key="pageIndicatorTintColor" red="0.0039215686269999999" green="0.76078431369999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="currentPageIndicatorTintColor" red="0.98431372549999996" green="0.2470588235" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                    </pageControl>
-                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-9t-IDY">
-                                        <rect key="frame" x="540" y="30" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="FP6-Mw-pyg"/>
-                                            <constraint firstAttribute="height" constant="20" id="fun-If-BZ3"/>
-                                            <constraint firstAttribute="height" constant="20" id="kkQ-uM-Ugs"/>
-                                            <constraint firstAttribute="width" constant="20" id="wZM-oE-IST"/>
-                                        </constraints>
-                                        <state key="normal" image="exit.png"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="FP6-Mw-pyg"/>
-                                                <exclude reference="kkQ-uM-Ugs"/>
-                                            </mask>
-                                        </variation>
-                                        <connections>
-                                            <action selector="instructionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QX0-49-spf"/>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="toMainView" id="WIY-Vp-UAB"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="j0Q-q4-FDe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Go-ra-ezi">
+                                <rect key="frame" x="40" y="60" width="520" height="520"/>
+                                <mutableString key="text">Don't eat pete was one of my favorite games to play with my family when I was growing up. It is a group game, so grab your friends and family and here's how to play!  1) Select one person to be the "Picker" for the round. That person will look away while the rest of the group decides on a square to be "Pete".  2) Once Pete has been chosen, bring the Picker back and they will begin selecting squares, hoping NOT to find Pete, because each time you successfully pick a square that is NOT Pete, you get to eat a piece of candy!  3) The Picker continues to choose squares until Pete is discovered and the game is over! Pick a new player to have a chance at snarfing some candy and play again!</mutableString>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-9t-IDY">
+                                <rect key="frame" x="560" y="28" width="20" height="20"/>
                                 <constraints>
-                                    <constraint firstItem="7Go-ra-ezi" firstAttribute="centerX" secondItem="P2h-a6-CWM" secondAttribute="centerX" id="2BC-tp-3G6"/>
-                                    <constraint firstAttribute="trailing" secondItem="wOU-9t-IDY" secondAttribute="trailing" id="Oe3-gn-ZYJ"/>
-                                    <constraint firstItem="7Go-ra-ezi" firstAttribute="top" secondItem="fg5-Vw-d2g" secondAttribute="bottom" constant="20" id="PZf-eL-uTv"/>
-                                    <constraint firstAttribute="bottom" secondItem="A6C-fd-PM5" secondAttribute="bottom" constant="8" id="TXA-jZ-b4r"/>
-                                    <constraint firstItem="wOU-9t-IDY" firstAttribute="top" secondItem="P2h-a6-CWM" secondAttribute="top" constant="30" id="YjZ-ld-1uy"/>
-                                    <constraint firstItem="A6C-fd-PM5" firstAttribute="centerX" secondItem="P2h-a6-CWM" secondAttribute="centerX" id="ehd-Yu-tf7"/>
-                                    <constraint firstItem="fg5-Vw-d2g" firstAttribute="centerX" secondItem="P2h-a6-CWM" secondAttribute="centerX" id="f6t-Tf-siT"/>
-                                    <constraint firstItem="7Go-ra-ezi" firstAttribute="centerY" secondItem="P2h-a6-CWM" secondAttribute="centerY" id="hha-V4-18q"/>
+                                    <constraint firstAttribute="height" constant="20" id="DsC-OI-Rhj"/>
+                                    <constraint firstAttribute="width" constant="20" id="FP6-Mw-pyg"/>
+                                    <constraint firstAttribute="width" constant="20" id="T6L-Ph-51L"/>
+                                    <constraint firstAttribute="height" constant="20" id="kkQ-uM-Ugs"/>
                                 </constraints>
-                            </view>
+                                <state key="normal" image="exit.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FP6-Mw-pyg"/>
+                                        <exclude reference="kkQ-uM-Ugs"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="instructionsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QX0-49-spf"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toMainView" id="WIY-Vp-UAB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Eat Pete Rules!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg5-Vw-d2g">
+                                <rect key="frame" x="214" y="28" width="173" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="HJR-Cc-psC"/>
+                                    <constraint firstAttribute="width" constant="173" id="Trc-lw-FZw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0039215686269999999" green="0.76078431369999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="P2h-a6-CWM" firstAttribute="leading" secondItem="f0s-8J-vHE" secondAttribute="leadingMargin" id="8Ww-rs-Uju"/>
-                            <constraint firstItem="P2h-a6-CWM" firstAttribute="top" secondItem="f0s-8J-vHE" secondAttribute="topMargin" id="XEk-P0-f6s"/>
-                            <constraint firstItem="L0l-ms-q2e" firstAttribute="top" secondItem="P2h-a6-CWM" secondAttribute="bottom" id="Z7h-Kg-keo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="P2h-a6-CWM" secondAttribute="trailing" id="jqP-l8-tBh"/>
+                            <constraint firstAttribute="trailing" secondItem="j0Q-q4-FDe" secondAttribute="trailing" id="1rL-dn-pF3"/>
+                            <constraint firstItem="L0l-ms-q2e" firstAttribute="top" secondItem="j0Q-q4-FDe" secondAttribute="bottom" id="DMc-Ub-Nqy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Go-ra-ezi" secondAttribute="trailing" constant="20" id="DjW-Gq-40S"/>
+                            <constraint firstItem="fg5-Vw-d2g" firstAttribute="centerX" secondItem="f0s-8J-vHE" secondAttribute="centerX" id="Lg0-3g-f5G"/>
+                            <constraint firstAttribute="trailing" secondItem="wOU-9t-IDY" secondAttribute="trailing" constant="20" id="Lry-eF-ht1"/>
+                            <constraint firstItem="7Go-ra-ezi" firstAttribute="leading" secondItem="f0s-8J-vHE" secondAttribute="leadingMargin" constant="20" id="QBu-Pa-Jso"/>
+                            <constraint firstItem="j0Q-q4-FDe" firstAttribute="top" secondItem="f0s-8J-vHE" secondAttribute="top" id="eUK-Tt-miN"/>
+                            <constraint firstItem="j0Q-q4-FDe" firstAttribute="leading" secondItem="f0s-8J-vHE" secondAttribute="leading" id="hl5-lf-GOK"/>
+                            <constraint firstItem="wOU-9t-IDY" firstAttribute="top" secondItem="qpx-6T-zMb" secondAttribute="bottom" constant="8" id="i1R-19-a3H"/>
+                            <constraint firstItem="7Go-ra-ezi" firstAttribute="top" secondItem="fg5-Vw-d2g" secondAttribute="bottom" constant="8" id="iRj-yH-x7H"/>
+                            <constraint firstItem="L0l-ms-q2e" firstAttribute="top" secondItem="7Go-ra-ezi" secondAttribute="bottom" constant="20" id="j1e-kS-bHj"/>
+                            <constraint firstItem="fg5-Vw-d2g" firstAttribute="top" secondItem="qpx-6T-zMb" secondAttribute="bottom" constant="8" id="tei-jC-Nby"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="pageControl" destination="A6C-fd-PM5" id="sqX-GR-vID"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckq-V1-Sq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -719,6 +698,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="candy_bg.png" width="1242" height="2208"/>
         <image name="exit.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>

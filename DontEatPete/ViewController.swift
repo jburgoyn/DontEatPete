@@ -33,23 +33,8 @@ class ViewController: UIViewController {
     // Variables
     var pete = 0
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for var i = 0; i < 16; i++ {
-            
-            if let button = view.viewWithTag(i) as? PeteBtn {
-                
-                button.setImage(UIImage(named: "candy1"), forState: .Normal)
-                
-                
-                button.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-                button.tintColor = UIColor .whiteColor()
-            }
-            
-        }
      
     }
     

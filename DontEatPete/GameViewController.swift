@@ -18,24 +18,11 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(peteSent)
-        
+
         playAgainBtn.layer.cornerRadius = 5
         modalGameOver.layer.cornerRadius = 15
         modalGameOver.clipsToBounds = true
         
-        for var i = 0; i < 16; i++ {
-            
-            if let button = view.viewWithTag(i) as? PeteBtn {
-                
-                button.setImage(UIImage(named: "candy1"), forState: .Normal)
-               
-                    
-                button.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-                button.tintColor = UIColor .whiteColor()
-            }
-        }
     }
 
     

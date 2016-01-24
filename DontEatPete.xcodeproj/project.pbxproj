@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9316D481C54841300CA70B9 /* candy_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F9316D471C54841300CA70B9 /* candy_bg.png */; };
 		F96224A91C53E0DF00B4BB98 /* candy1.png in Resources */ = {isa = PBXBuildFile; fileRef = F96224A81C53E0DF00B4BB98 /* candy1.png */; };
 		F96224AB1C53E9CA00B4BB98 /* candy2.png in Resources */ = {isa = PBXBuildFile; fileRef = F96224AA1C53E9CA00B4BB98 /* candy2.png */; };
 		F96224AD1C53FDB700B4BB98 /* InstructionsOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96224AC1C53FDB700B4BB98 /* InstructionsOneVC.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9316D471C54841300CA70B9 /* candy_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy_bg.png; sourceTree = "<group>"; };
 		F96224A81C53E0DF00B4BB98 /* candy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy1.png; sourceTree = "<group>"; };
 		F96224AA1C53E9CA00B4BB98 /* candy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy2.png; sourceTree = "<group>"; };
 		F96224AC1C53FDB700B4BB98 /* InstructionsOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsOneVC.swift; sourceTree = "<group>"; };
@@ -72,12 +74,13 @@
 				F983B9091C4898440054CF68 /* ViewController.swift */,
 				F99CD5FB1C48C29A00029931 /* GameViewController.swift */,
 				F99CD5F91C48A03800029931 /* PeteBtn.swift */,
-				F983B90B1C4898440054CF68 /* Main.storyboard */,
 				F96224AC1C53FDB700B4BB98 /* InstructionsOneVC.swift */,
+				F983B90B1C4898440054CF68 /* Main.storyboard */,
 				F983B90E1C4898440054CF68 /* Assets.xcassets */,
 				F9F77E7F1C4A0EA300E738D2 /* exit.png */,
 				F96224A81C53E0DF00B4BB98 /* candy1.png */,
 				F96224AA1C53E9CA00B4BB98 /* candy2.png */,
+				F9316D471C54841300CA70B9 /* candy_bg.png */,
 				F9B470641C4A230D008F48E2 /* launch.png */,
 				F983B9101C4898440054CF68 /* LaunchScreen.storyboard */,
 				F983B9131C4898440054CF68 /* Info.plist */,
@@ -150,6 +153,7 @@
 				F9F77E801C4A0EA300E738D2 /* exit.png in Resources */,
 				F983B90F1C4898440054CF68 /* Assets.xcassets in Resources */,
 				F983B90D1C4898440054CF68 /* Main.storyboard in Resources */,
+				F9316D481C54841300CA70B9 /* candy_bg.png in Resources */,
 				F96224AB1C53E9CA00B4BB98 /* candy2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
