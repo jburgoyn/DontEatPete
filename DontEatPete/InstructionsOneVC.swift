@@ -19,6 +19,10 @@ class InstructionsOneVC: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func instructionsExitPressed(sender: AnyObject) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 
 }

@@ -13,6 +13,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var modalGameOver: UIView!
     @IBOutlet weak var gameOverLbl: UILabel!
     @IBOutlet weak var playAgainBtn: UIButton!
+    @IBOutlet weak var soundBtn: UIButton!
     
     var peteSent = Int()
     
@@ -23,8 +24,33 @@ class GameViewController: UIViewController {
         modalGameOver.layer.cornerRadius = 15
         modalGameOver.clipsToBounds = true
         
+        if musicPlayer.volume > 0 && soundfxPlayer.volume > 0 {
+            
+            soundBtn.alpha = 1
+            
+        } else {
+            
+            soundBtn.alpha = 0.2
+        }
+        
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if musicPlayer.volume > 0 && soundfxPlayer.volume > 0 {
+            
+            soundBtn.alpha = 1
+            
+        } else {
+        
+            soundBtn.alpha = 0.2
+        }
+    }
+    
+    @IBAction func playAgainBtnPressed(sender: UIButton) {
+        
+        dismissViewControllerAnimated(false, completion: nil)
+    }
     
     @IBAction func eatPete(sender: PeteBtn) {
         
@@ -33,10 +59,13 @@ class GameViewController: UIViewController {
             
             sender.backgroundColor = .grayColor()
             sender.enabled = false
+            musicPlayer.play()
        
         } else {
             
             peteSent = 0
+            
+            soundfxPlayer.play()
            
             for var i = 0; i < 16; i++ {
                 
@@ -59,4 +88,26 @@ class GameViewController: UIViewController {
       
         }
     }
+    
+
+    
+    @IBAction func soundBtnPressed(sender: AnyObject) {
+        
+        if musicPlayer.volume > 0 && soundfxPlayer.volume > 0 {
+            
+            musicPlayer.volume = 0
+            soundfxPlayer.volume = 0
+            
+            soundBtn.alpha = 0.2
+            
+        } else {
+            
+            musicPlayer.volume = 0.1
+            soundfxPlayer.volume = 0.4
+            soundBtn.alpha = 1.0
+        }
+    }
+    
+    
+    
 }

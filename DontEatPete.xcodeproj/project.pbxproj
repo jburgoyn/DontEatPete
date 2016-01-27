@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F91837E71C573D9000DA42F7 /* notPete.wav in Resources */ = {isa = PBXBuildFile; fileRef = F91837E61C573D9000DA42F7 /* notPete.wav */; };
+		F91837E91C573DAC00DA42F7 /* womp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F91837E81C573DAC00DA42F7 /* womp.mp3 */; };
 		F9316D481C54841300CA70B9 /* candy_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F9316D471C54841300CA70B9 /* candy_bg.png */; };
+		F9316D4A1C548DA400CA70B9 /* candylobby.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9316D491C548DA400CA70B9 /* candylobby.wav */; };
+		F9316D4E1C556E7B00CA70B9 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9316D4D1C556E7B00CA70B9 /* Audio.swift */; };
+		F9316D501C5570B800CA70B9 /* gameover.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9316D4F1C5570B800CA70B9 /* gameover.wav */; };
+		F9316D561C55A60800CA70B9 /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = F9316D551C55A60800CA70B9 /* sound.png */; };
+		F9316D581C55AB0200CA70B9 /* foundPete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9316D571C55AB0200CA70B9 /* foundPete.mp3 */; };
 		F96224A91C53E0DF00B4BB98 /* candy1.png in Resources */ = {isa = PBXBuildFile; fileRef = F96224A81C53E0DF00B4BB98 /* candy1.png */; };
 		F96224AB1C53E9CA00B4BB98 /* candy2.png in Resources */ = {isa = PBXBuildFile; fileRef = F96224AA1C53E9CA00B4BB98 /* candy2.png */; };
 		F96224AD1C53FDB700B4BB98 /* InstructionsOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96224AC1C53FDB700B4BB98 /* InstructionsOneVC.swift */; };
@@ -23,7 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F91837E61C573D9000DA42F7 /* notPete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notPete.wav; sourceTree = "<group>"; };
+		F91837E81C573DAC00DA42F7 /* womp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = womp.mp3; sourceTree = "<group>"; };
 		F9316D471C54841300CA70B9 /* candy_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy_bg.png; sourceTree = "<group>"; };
+		F9316D491C548DA400CA70B9 /* candylobby.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = candylobby.wav; sourceTree = "<group>"; };
+		F9316D4D1C556E7B00CA70B9 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		F9316D4F1C5570B800CA70B9 /* gameover.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameover.wav; sourceTree = "<group>"; };
+		F9316D551C55A60800CA70B9 /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound.png; sourceTree = "<group>"; };
+		F9316D571C55AB0200CA70B9 /* foundPete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = foundPete.mp3; sourceTree = "<group>"; };
 		F96224A81C53E0DF00B4BB98 /* candy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy1.png; sourceTree = "<group>"; };
 		F96224AA1C53E9CA00B4BB98 /* candy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candy2.png; sourceTree = "<group>"; };
 		F96224AC1C53FDB700B4BB98 /* InstructionsOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsOneVC.swift; sourceTree = "<group>"; };
@@ -73,8 +87,9 @@
 				F983B9071C4898440054CF68 /* AppDelegate.swift */,
 				F983B9091C4898440054CF68 /* ViewController.swift */,
 				F99CD5FB1C48C29A00029931 /* GameViewController.swift */,
-				F99CD5F91C48A03800029931 /* PeteBtn.swift */,
 				F96224AC1C53FDB700B4BB98 /* InstructionsOneVC.swift */,
+				F9316D4D1C556E7B00CA70B9 /* Audio.swift */,
+				F99CD5F91C48A03800029931 /* PeteBtn.swift */,
 				F983B90B1C4898440054CF68 /* Main.storyboard */,
 				F983B90E1C4898440054CF68 /* Assets.xcassets */,
 				F9F77E7F1C4A0EA300E738D2 /* exit.png */,
@@ -82,6 +97,12 @@
 				F96224AA1C53E9CA00B4BB98 /* candy2.png */,
 				F9316D471C54841300CA70B9 /* candy_bg.png */,
 				F9B470641C4A230D008F48E2 /* launch.png */,
+				F9316D491C548DA400CA70B9 /* candylobby.wav */,
+				F9316D571C55AB0200CA70B9 /* foundPete.mp3 */,
+				F9316D4F1C5570B800CA70B9 /* gameover.wav */,
+				F91837E61C573D9000DA42F7 /* notPete.wav */,
+				F91837E81C573DAC00DA42F7 /* womp.mp3 */,
+				F9316D551C55A60800CA70B9 /* sound.png */,
 				F983B9101C4898440054CF68 /* LaunchScreen.storyboard */,
 				F983B9131C4898440054CF68 /* Info.plist */,
 			);
@@ -147,12 +168,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9316D501C5570B800CA70B9 /* gameover.wav in Resources */,
 				F983B9121C4898440054CF68 /* LaunchScreen.storyboard in Resources */,
+				F91837E71C573D9000DA42F7 /* notPete.wav in Resources */,
+				F91837E91C573DAC00DA42F7 /* womp.mp3 in Resources */,
 				F96224A91C53E0DF00B4BB98 /* candy1.png in Resources */,
 				F9B470651C4A230D008F48E2 /* launch.png in Resources */,
 				F9F77E801C4A0EA300E738D2 /* exit.png in Resources */,
+				F9316D581C55AB0200CA70B9 /* foundPete.mp3 in Resources */,
 				F983B90F1C4898440054CF68 /* Assets.xcassets in Resources */,
 				F983B90D1C4898440054CF68 /* Main.storyboard in Resources */,
+				F9316D561C55A60800CA70B9 /* sound.png in Resources */,
+				F9316D4A1C548DA400CA70B9 /* candylobby.wav in Resources */,
 				F9316D481C54841300CA70B9 /* candy_bg.png in Resources */,
 				F96224AB1C53E9CA00B4BB98 /* candy2.png in Resources */,
 			);
@@ -165,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9316D4E1C556E7B00CA70B9 /* Audio.swift in Sources */,
 				F99CD5FC1C48C29A00029931 /* GameViewController.swift in Sources */,
 				F99CD5FA1C48A03800029931 /* PeteBtn.swift in Sources */,
 				F983B90A1C4898440054CF68 /* ViewController.swift in Sources */,
